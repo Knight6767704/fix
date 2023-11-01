@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixmymill|treadmill service</title>
+  <link rel="icon" href="images/Screenshot from 2023-09-06 14-38-59.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+ <!-- <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+          }
+        }
+      }
+    }
+  </script>
+
+  <nav class="niv fixed px-4 py-2 flex justify-between items-center dark:bg-gray-800"
+    style="background-color:black; height: 110px;">
+    <div class="max-w-screen-xl flex items-center space-x-4">
+      <a href="/" class="flex items-center sm:ml-0 xs:ml-0 xl:ml-12 mt-4">
+        <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+          style="width:257px;height:100px;object-fit:cover" width="auto" height="118"
+          srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+          fetchpriority="high">
+      </a>
+    </div>
+    <div class="lg:hidden">
+      <button class="navbar-burger flex items-center text-violet-600 dark:text-gray-100 p-1" id="navbar_burger">
+        <svg class="block h-8 w-10 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Hamberger menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 mr-80" id="navbar-sticky">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700"
+        style="background-color: black;">
+        <li>
+          <a href="about.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">About
+            Us</a>
+        </li>
+        <li>
+          <a href="service.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="faq.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact
+            Us</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="hidden lg:flex">
+
+
+      <button id="theme-toggle" data-collapse-toggle="navbar-sticky" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <span id="menuIcon">
+          <svg id="theme-toggle-light-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </span>
+      </button>
+
+
+    </div>
+
+  </nav>
+
+
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
+    <nav
+      class="fixed dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-full max-w-full py-6 px-6 border-r overflow-y-auto"
+      style="background-color: black;">
+      <div class="flex items-center justify-between mb-8">
+        <div></div> 
+        <button class="navbar-close">
+          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+
+      <div class="niv flex flex-col items-center mt-28">
+        <a href="about.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us</a>
+        <a href="service.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Services</a>
+        <a href="contact.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Contact Us</a>
+        <a href="faq.html" class="text-white hover:text-gray-300 py-2 mb-6 text-xl">FAQ</a>
+      </div>
+
+    </nav>
+  </div>
+  <style>
+    /* Add these styles to make the navbar sticky */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Adjust the z-index value based on your design needs */
+    }
+
+    /* Rest of your styles */
+  </style>
+
+
+
+  <script>
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+
+    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    var themeToggleDarkIcon_2 = document.getElementById('theme-toggle-dark-icon-2');
+    var themeToggleLightIcon_2 = document.getElementById('theme-toggle-light-icon-2');
+
+    // Change the icons inside the button based on previous settings
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+      '(prefers-color-scheme: dark)').matches)) {
+      themeToggleLightIcon.classList.remove('hidden');
+      if (themeToggleDarkIcon_2) {
+        themeToggleLightIcon_2.classList.remove('hidden');
+      }
+    } else {
+      themeToggleDarkIcon.classList.remove('hidden');
+      if (themeToggleDarkIcon_2) {
+        themeToggleDarkIcon_2.classList.remove('hidden');
+      }
+    }
+
+
+    var themeToggleBtn_2 = document.getElementById('theme-toggle-2');
+    if (themeToggleBtn_2) {
+
+      themeToggleBtn_2.addEventListener('click', function () {
+
+        // toggle icons inside button
+        themeToggleDarkIcon_2.classList.toggle('hidden');
+        themeToggleLightIcon_2.classList.toggle('hidden');
+
+        sync_theme()
+
+      });
+    }
+
+
+    var themeToggleBtn = document.getElementById('theme-toggle');
+
+    themeToggleBtn.addEventListener('click', function () {
+
+      // toggle icons inside button
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
+
+      sync_theme()
+
+
+    });
+
+
+    function sync_theme() {
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      }
+
+    }
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // open
+      const burger = document.querySelectorAll('.navbar-burger');
+      const menu = document.querySelectorAll('.navbar-menu');
+
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll('.navbar-close');
+      const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
+        }
+      }
+
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
+        }
+      }
+    });
+  </script>  -->
+
+
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 " style="background-color: black;">
+    <div class="max-w-screen-xl flex items-center space-x-4">
+      <a href="/" class="flex items-center sm:ml-0 xs:ml-0 xl:ml-12 mt-4">
+        <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+          style="width:257px;height:100px;object-fit:cover" width="auto" height="118"
+          srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+          fetchpriority="high">
+      </a>
+      <div class="flex md:order-2">
+        <button data-collapse-toggle="navbar-stick" type="button" class="inline-flex items-center p-2 w-12 h-12 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 ml-16" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-20 h-20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+    </div>
+    
+    <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700 ml-80"
+        style="background-color: black;">
+        <li>
+          <a href="about.html"
+            class="block py-2 pl-3 pr-4  rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">About
+            Us</a>
+        </li>
+        <li>
+          <a href="service.html"
+            class="block py-2 pl-3 pr-4 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="faq.html"
+            class="block py-2 pl-3 pr-4  rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 pl-3 pr-4  rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact
+            Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="navbar-menu hidden ">
+
+
+    <!-- Full-screen menu content goes here -->
+    <div class="niv flex flex-col items-center mb-80">
+      <a href="about.html" class="text-white hover:text-gray-300  text-2xl">About Us</a>
+      <a href="service.html" class="text-white hover:text-gray-300  text-2xl">Services</a>
+      <a href="contact.html" class="text-white hover:text-gray-300  text-2xl">Contact Us</a>
+      <a href="faq.html" class="text-white hover:text-gray-300 text-xl">FAQ</a>
+    </div>
+
+  </div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('[data-collapse-toggle="navbar-stick"]');
+  const body = document.body;
+  const navbarMenu = document.querySelector('.navbar-menu');
+
+  menuToggle.addEventListener('click', function () {
+    navbarMenu.classList.toggle('fullscreen');
+    body.classList.toggle('overflow-hidden');
+  });
+
+  closeButton.addEventListener('click', function () {
+    navbarMenu.classList.remove('fullscreen');
+    body.classList.remove('overflow-hidden');
+    
+  });
+});
+  </script>
+
+
+
+  <section class="hero bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+    <br>
+    <br>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1
+        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        YOUR ONE-STOP SOLUTION <br>FOR PROFESSIONAL FITNESS <br>EQUIPMENT SERVICING.</h1>
+      <br>
+      <div id="comp-j7epyx99" class="KcpHeO tz5f0K comp-j7epyx99 wixui-rich-text" data-testid="richTextElement">
+        <h6 class="font_6 wixui-rich-text__text" style="line-height:1.4em; text-align:center; font-size:24px;"><span
+            style="font-family:barlow-medium,barlow,sans-serif;" class="wixui-rich-text__text"><span
+              style="color:#000000;" class="wixui-rich-text__text"><span style="letter-spacing:0.02em;"
+                class="wixui-rich-text__text">Let Fixmymill Make Your Fitness Equipment <br>Run Like New
+                Again</span></span></span></h6>
+      </div>
+      <br>
+      <br>
+      <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <button type="button"
+          class="text-white bg-black-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-20 py-4 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          style="background-color: black;" onclick="window.location.href='frm.html'">Book Now</button>
+      </div>
+
+    </div>
+  </section>
+  <!--<section class="py-12 px-4">
+  <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+      <div class="container mx-auto py-12">
+        
+        <div class="flex flex-wrap justify-between mb-6 -mx-2">
+          <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+            <a href="#" class="block relative group">
+              <img src="images/treadmill installation_edited.webp" alt="Service 1" class="w-full h-auto">
+              <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center">
+                <div class="p-4 text-center rounded-lg">
+                  <p style="color: white;">Treadmill Installation</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+            <a href="#" class="block relative group">
+              <img src="images/treadmill-repair-service-500x500_edited.webp" alt="Service 2" class="w-full h-auto">
+              <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center">
+                <div class="p-4 text-center rounded-lg">
+                  <p style="color: white;">Treadmill Repairs</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="container mx-auto py-12">
+         
+          <div class="flex flex-wrap justify-between mb-6 -mx-2">
+            <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+              <a href="#" class="block relative group">
+                <img src="images/Sterilizing Gym.webp" alt="Service 1" class="w-full h-auto">
+                <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center">
+                  <div class="p-4 text-center rounded-lg">
+                    <p style="color: white;">Treadmill Service</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+              <a href="#" class="block relative group">
+                <img src="images/pexels-ivan-samkov-4162578.jpg" alt="Service 2" class="w-full h-auto">
+                <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center">
+                  <div class="p-4 text-center rounded-lg">
+                    <p style="color: white;">Exercise Bike Service</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="container mx-auto py-12">
+           
+            <div class="flex flex-wrap justify-between mb-6 -mx-2">
+              <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+                <a href="#" class="block relative group">
+                  <img src="images/pexels-pixabay-47084.jpg" alt="Service 1" class="w-full h-auto">
+                  <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="p-4 text-center rounded-lg">
+                      <p style="color: white;">Elliptical Cross Trainer Service</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+                <a href="#" class="block relative group">
+                  <img src="images/pexels-karolina-grabowska-4498610.jpg" alt="Service 2" class="w-full h-auto">
+                  <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="p-4 text-center rounded-lg">
+                      <p style="color: white;">Home Gym Service</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+      </div>
+  </div>
+</section> -->
+
+  
+
+
+  <section class="services bg-white dark:bg-gray-900" style="background-color: white;">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex flex-col items-center">
+      <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+        <div>
+          <svg width="515" height="300" viewBox="0 0 515 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="515" height="300" rx="30" fill="#9E1111"/>
+            <text x="30" y="100" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Your Fitness Journey
+            </text>
+            <text x="30" y="130" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Begins Here
+            </text>
+            <text x="30" y="160" font-family="Inter" font-size="18" fill="white" font-weight="bold">
+              Treadmill Installation
+            </text>
+            <rect x="30" y="200" width="135" height="43" rx="10" fill="rgba(0, 0, 0, 0.30)" style="cursor: pointer;" />
+            <text x="50" y="230" font-family="Inter" font-size="18" fill="white" font-weight="bold">Book Now</text>
+            
+            <image href="images/4.png" width="227" height="300" x="288"></image>
+          </svg>
+        </div>
+        <div>
+          <svg width="515" height="300" viewBox="0 0 515 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="515" height="300" rx="30" fill="#8FA60D"/>
+            
+            <text x="30" y="100" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Treadmill Troubles?
+            </text>
+            <text x="30" y="130" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              We Have the Fix!
+            </text>
+            <text x="30" y="160" font-family="Inter" font-size="18" fill="white" font-weight="bold">
+              Treadmill Repairs
+            </text>
+            <rect x="30" y="200" width="135" height="43" rx="10" fill="rgba(0, 0, 0, 0.30)" style="cursor: pointer;" />
+            <text x="50" y="230" font-family="Inter" font-size="18" fill="white" font-weight="bold">Book Now</text>
+            
+            <image href="images/5.png" width="227" height="300" x="288"></image>
+          </svg>
+            
+        </div>
+        <div>
+          <svg width="515" height="300" viewBox="0 0 515 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="515" height="300" rx="30" fill="#0271BE"/>
+            <text x="30" y="100" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Empowering Every
+            </text>
+            <text x="30" y="130" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Stride
+            </text>
+            <text x="30" y="160" font-family="Inter" font-size="18" fill="white" font-weight="bold">
+              Treadmill Service
+            </text>
+            <rect x="30" y="200" width="135" height="43" rx="10" fill="rgba(0, 0, 0, 0.30)" style="cursor: pointer;" />
+            <text x="50" y="230" font-family="Inter" font-size="18" fill="white" font-weight="bold">Book Now</text>
+            
+            <image href="images/2.png" width="227" height="300" x="288"></image>
+          </svg>
+        </div>
+        <div>
+          <svg width="523" height="308" viewBox="0 0 523 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_96_442)">
+            <rect x="4" width="515" height="300" rx="30" fill="#E3A402"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_96_442" x="0" y="0" width="523" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_442"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_442" result="shape"/>
+            </filter>
+            </defs>
+            
+            
+            <text x="30" y="70" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Expert Exercise Bike 
+            </text>
+            <text x="30" y="100" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Repairs for Smooth 
+            </text>
+            <text x="30" y="130" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Ride!
+            </text>
+            <text x="30" y="160" font-family="Inter" font-size="18" fill="white" font-weight="bold">
+              Exercise Bike Repairs
+            </text>
+            <rect x="30" y="200" width="135" height="43" rx="10" fill="rgba(0, 0, 0, 0.30)" style="cursor: pointer;" />
+            <text x="50" y="230" font-family="Inter" font-size="18" fill="white" font-weight="bold">Book Now</text>
+            
+            <image href="images/1.png" width="227" height="300" x="300"></image>
+          </svg>
+        </div>
+        <div>
+          <svg width="523" height="308" viewBox="0 0 523 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_96_434)">
+            <rect x="4" width="515" height="300" rx="30" fill="#8FA60D"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_96_434" x="0" y="0" width="523" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_96_434"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_96_434" result="shape"/>
+            </filter>
+            </defs>
+            
+            <text x="30" y="100" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Bringing Solutions to
+            </text>
+            <text x="30" y="130" font-family="Inter" font-size="24" fill="white" font-weight="bold">
+              Your Doorstep
+            </text>
+            <text x="30" y="160" font-family="Inter" font-size="18" fill="white" font-weight="bold">
+              Home visit
+            </text>
+            <rect x="30" y="200" width="135" height="43" rx="10" fill="rgba(0, 0, 0, 0.30)" style="cursor: pointer;" />
+            <text x="50" y="230" font-family="Inter" font-size="18" fill="white" font-weight="bold">Book Now</text>
+            
+            <image href="images/3 5609.png" width="227" height="300" x="298"></image>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+
+  <!--<div id="services">
+<section class="py-12 px-4">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+    <div class="container mx-auto py-12">
+
+      <div class="flex flex-wrap justify-between mb-6 -mx-2">
+        <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+          <a href="#" class="block relative group">
+            <img src="images/treadmill installation_edited.webp" alt="Service 1" class="w-full h-auto max-w-64 mx-auto">
+            <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center bg-black bg-opacity-20">
+              <div class="p-4 text-center rounded-lg">
+                <p style="color: white; font-size: 24px;">Treadmill <br>Installation</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+          <a href="#" class="block relative group">
+            <img src="images/treadmill-repair-service-500x500_edited.webp" alt="Service 2" class="w-full h-auto max-w-64 mx-auto">
+            <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center bg-black bg-opacity-20">
+              <div class="p-4 text-center rounded-lg">
+                <h1 style="color: white; font-size: 24px; line-height: normal;">Treadmill <br>Repairs</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+     
+      <div class="flex flex-wrap justify-between mb-6 -mx-2">
+        <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+          <a href="#" class="block relative group">
+            <img src="images/Sterilizing Gym.webp" alt="Service 1" class="w-full h-auto max-w-64 mx-auto">
+            <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center bg-black bg-opacity-20">
+              <div class="p-4 text-center rounded-lg">
+                <p style="color: white; font-size: 24px;">Treadmill <br>Service</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+          <a href="#" class="block relative group">
+            <img src="images/pexels-ivan-samkov-4162578.jpg" alt="Service 2" class="w-full h-auto max-w-64 mx-auto">
+            <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center bg-black bg-opacity-20">
+              <div class="p-4 text-center rounded-lg">
+                <p style="color: white; font-size: 24px;">Exercise Bike <br>Service</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-between mb-6 -mx-2">
+        <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+          <a href="#" class="block relative group">
+            <img src="images/pexels-pixabay-47084.jpg" alt="Service 1" class="w-full h-auto max-w-64 mx-auto">
+            <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center bg-black bg-opacity-20">
+              <div class="p-4 text-center rounded-lg">
+                <p style="color: white; font-size: 24px;">Elliptical <br>Cross Trainer <br>Service</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full md:w-6/12 lg:w-6/12 px-2">
+          <a href="#" class="block relative group">
+            <img src="images/pexels-karolina-grabowska-4498610.jpg" alt="Service 2" class="w-full h-auto max-w-64 mx-auto">
+            <div class="absolute inset-0 opacity-100 transition-opacity flex items-center justify-center bg-black bg-opacity-20">
+              <div class="p-4 text-center rounded-lg">
+                <p style="color: white; font-size: 24px;">Home Gym <br>Service</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>-->
+
+  <section class="why bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+    <br>
+    <br>
+    <br>
+    <h2 class="text-4xl font-semibold text-center dark:text-white-800 mb-8">Why Choose Us?</h2>
+    <br>
+    <div class="relative mx-auto max-w-7xl z-10 flex flex-col justify-center items-center pt-14">
+      <div class="grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4 ">
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Certified <br>Professional
+            <br>Technicians
+          </h3>
+        </div>
+
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Eco-Friendly <br>Servicing</h3>
+        </div>
+
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">100% <br>Satisfaction <br>Guaranteed</h3>
+        </div>
+
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Available <br>Evenings & <br>Weekends
+          </h3>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </section>
+
+
+
+
+
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+
+ <br> <br>
+      <h2 class="text-3xl font-semibold text-center dark:text-white-800 mb-8">Why Choose Us?</h2>
+
+     
+
+
+      <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+              <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                  style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                      <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                      <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                      <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                  </svg>
+              </div>
+              <h3 class="mt-6 text-gray-400">Customizable</h3>
+              <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Tailor your landing page's
+                  look
+                  and feel, from the color scheme to the font size, to the design of the page.
+              </p>
+          </div>
+
+
+          <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+              <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                  style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
+                  </svg>
+              </div>
+              <h3 class="mt-6 text-gray-400">Fast Performance</h3>
+              <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">We build our templates for
+                  speed in mind, for super-fast load times so your customers never waver.
+              </p>
+          </div>
+
+
+          <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+              <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                  style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                      <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
+                      <polyline points="12 8 7 3 3 7 8 12"></polyline>
+                      <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
+                      <polyline points="16 12 21 17 17 21 12 16"></polyline>
+                      <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
+                  </svg>
+              </div>
+              <h3 class="mt-6 text-gray-400">Fully Featured</h3>
+              <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                  Everything you need to
+                  succeed
+                  and launch your landing page, right out of the box. No need to install anything else.
+              </p>
+          </div>
+
+          <div class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+                style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                    <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
+                    <polyline points="12 8 7 3 3 7 8 12"></polyline>
+                    <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
+                    <polyline points="16 12 21 17 17 21 12 16"></polyline>
+                    <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
+                </svg>
+            </div>
+            <h3 class="mt-6 text-gray-400">Fully Featured</h3>
+            <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                Everything you need to
+                succeed
+                and launch your landing page, right out of the box. No need to install anything else.
+            </p>
+        </div>
+
+
+      </div>
+
+
+  </section>
+-->
+
+
+
+
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: white;">
+  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+      <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">Brands We Serve</h2>
+      <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 dark:text-gray-400">
+          <a href="#" class="flex justify-center items-center">
+              <svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/cockatoof.png" alt="">
+              </svg>                        
+          </a>
+          <a href="#" class="flex justify-center items-center">
+              <svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 86 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/maxprologi.png" alt="">
+              </svg>                                               
+          </a>
+          <a href="#" class="flex justify-center items-center">
+              <svg class="h-8 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 151 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/sketra.png" alt="">
+              </svg>                                                                 
+          </a>
+
+          <a href="#" class="flex justify-center items-center">
+              <svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 124 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/Untitled design (9).png" alt="">
+              </svg>                                                                                    
+          </a>
+          <a href="#" class="flex justify-center items-center">
+              <svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 137 37" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/powermaxlogoe.png" alt="`">
+              </svg>                                                                                   
+          </a>
+         <a href="#" class="flex justify-center items-center">
+              <svg class="h-6 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 124 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <img src="images/[removal.ai]_65827cd7-3854-450f-8c08-983306562e1c-screenshot-from-2023-09-14-20-06-17.png" alt="">
+              </svg>                                                                                    
+          </a> 
+          <a href="#" class="flex justify-center items-center">
+            <svg class="h-6 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 124 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <img src="images/[removal.ai]_f7cd7721-fd06-4565-9343-542052cb5b7d-r.png" alt="">
+            </svg>                                                                                    
+        </a>
+       <a href="#" class="flex justify-center items-center">
+          <svg class="h-6 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 124 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <img src="images/sparnodlogof.png" alt="">
+          </svg>                                                                                    
+      </a> 
+      </div>
+  </div>
+</section> -->
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: white;">
+  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+    <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">Brands We Serve</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <a href="#" class="carousel-item">
+          <img src="images/cockatoof.png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/maxprologi.png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/sketra.png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/Untitled design (9).png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/powermaxlogoe.png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/[removal.ai]_65827cd7-3854-450f-8c08-983306562e1c-screenshot-from-2023-09-14-20-06-17.png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/[removal.ai]_f7cd7721-fd06-4565-9343-542052cb5b7d-r.png" alt="">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="images/sparnodlogof.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->
+  <section class="brand bg-white dark:bg-gray-900" style="background-color: white;">
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+      <h2
+        class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">
+        Brands We Serve</h2>
+      <div
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <div class="w-full inline-flex flex-nowrap">
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <li>
+              <img src="images/cockatoo1.webp" alt="cockatoo_edited.png"
+                style="width: 200px; height: 97px; object-fit: cover; object-position: 50% 50%;" width="200" height="97"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/maxprologi1.webp" alt="maxprologi_edited.png"
+                style="width: 247px; height: 44px; object-fit: cover; object-position: 50% 50%;" width="247" height="44"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sketra.png" alt=""
+                style="width: 247px; height: 50px; object-fit: cover; object-position: 50% 50%;" width="247" height="50"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/[removal.ai]_c9c8879f-160a-4d27-b104-dee84dfd197b-stunner1.png" alt=""
+                style="width: 247px; height: 90px; object-fit: cover; object-position: 50% 50%;" width="247" height="90"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/powermax logo1.webp" alt="powermax logo.jpg"
+                style="width: 221px; height: 73px; object-fit: cover; object-position: 50% 50%;" width="221" height="73"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/cult1.webp" alt="" style="width:216px;height:56px;object-fit:cover" width="216"
+                height="56">
+            </li>
+            <li>
+              <img src="images/reachlogodited1.webp" alt="reachlogo (1)_edited.png"
+                style="width: 204px; height: 31px; object-fit: cover; object-position: 50% 50%;" width="204" height="31"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sparnodlogo1.webp" alt="sparnodlogo.png"
+                style="width: 276px; height: 63px; object-fit: cover; object-position: 50% 50%;" width="276" height="63"
+                fetchpriority="high">
+            </li>
+          </ul>
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            aria-hidden="true">
+            <li>
+              <img src="images/cockatoo1.webp" alt="cockatoo_edited.png"
+                style="width: 200px; height: 97px; object-fit: cover; object-position: 50% 50%;" width="200" height="97"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/maxprologi1.webp" alt="maxprologi_edited.png"
+                style="width: 247px; height: 44px; object-fit: cover; object-position: 50% 50%;" width="247" height="44"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sketra.png" alt=""
+                style="width: 247px; height: 50px; object-fit: cover; object-position: 50% 50%;" width="247" height="50"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/[removal.ai]_c9c8879f-160a-4d27-b104-dee84dfd197b-stunner1.png" alt=""
+                style="width: 247px; height: 90px; object-fit: cover; object-position: 50% 50%;" width="247" height="90"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/powermax logo1.webp" alt="powermax logo.jpg"
+                style="width: 221px; height: 73px; object-fit: cover; object-position: 50% 50%;" width="221" height="73"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/cult1.webp" alt="" style="width:216px;height:56px;object-fit:cover" width="216"
+                height="56">
+            </li>
+            <li>
+              <img src="images/reachlogodited1.webp" alt="reachlogo (1)_edited.png"
+                style="width: 204px; height: 31px; object-fit: cover; object-position: 50% 50%;" width="204" height="31"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sparnodlogo1.webp" alt="sparnodlogo.png"
+                style="width: 276px; height: 63px; object-fit: cover; object-position: 50% 50%;" width="276" height="63"
+                fetchpriority="high">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white" id="hi">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="mb-2 text-4xl font-bold dark:text-black">200+</h3>
+            <h3 class="mb-2 text-2xl font-bold dark:text-black">Certified Professional Technicians</h3>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="mb-2 text-4xl font-bold dark:text-black">15000+</h3>
+            <h3 class="mb-2 text-2xl font-bold dark:text-black">Services Delivered</h3>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="mb-2 text-4xl font-bold dark:text-black">25+</h3>
+            <h3 class="mb-2 text-2xl font-bold dark:text-black">Top Cities</h3>
+          </div>
+      </dl>
+  </div>
+</section> -->
+  <section class="media bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl
+        class="grid gap-8 sm:gap-16 lg:gap-32 mx-auto text-gray-900 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dark:text-white">
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">200+</h3>
+          <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Professional Technicians <br><br> </h3>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">15000+</h3>
+          <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Services Delivered <br> <br></h3>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">25+</h3>
+          <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Top Cities <br> <br></h3>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+
+
+
+
+  <!--<section id="contact" class="py-16">
+  <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Contact Us for a Free Quote</h2>
+  <div class="call-now-section text-center">
+    <a href="tel:08062177481" class="call-now-link">Call Now @ <span class="phone-number">08062177481</span></a>
+  </div>
+  <div class="flex flex-col md:flex-row mt-8 gap-8" style="align-items: center;"> 
+    <div class="w-full md:w-1/2">
+      <div class="relative w-full h-64 md:h-96">
+        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7600.529599808223!2d83.31703200053772!3d17.73215799348536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394345edcc4fb7%3A0x84e06fa1a732211f!2sa-Hub%2C%20Andhra%20University%20Incubation%20Center!5e0!3m2!1sen!2sin!4v1694247230340!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+       </div>
+    </div>
+    <div class="w-full mt-8 md:mt-0">
+      <div class="relative w-100 h-64 md:h-96 w-auto"> 
+        <form action="#" method="POST" class="absolute top-0 left-0 w-full h-96">
+          <div class="mb-4">
+            <div class="flex flex-col md:flex-row mb-4"> 
+              <div class="w-full md:w-1/2 mb-2 md:mr-2">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-500" />
+              </div>
+              <div class="w-full md:w-1/2 mb-2 md:ml-2">
+                <label for="phone" class="block text-gray-700 font-bold mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-500" />
+              </div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="subject" class="block text-gray-700 font-bold mb-2">Subject</label>
+            <input type="text" id="subject" name="subject" required class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-blue-500"></textarea>
+          </div>
+          <div class="mb-4 text-center">
+            <button type="submit" style="background-color: #ffa500; width: 100%;" class="hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+</section> -->
+  <div id="contact">
+    <section id="contact" class="contact py-16">
+      <h2
+        class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">
+        Contact Us for a Free Quote</h2>
+      <div class="call-now-section text-center text-3xl">
+        <a href="tel:08062177481" class="call-now-link" style="text-decoration: underline;">Call Now @ <span
+            class="phone-number">08062177481</span></a>
+      </div>
+      <div
+        class="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white text-[#333] my-6 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-white-400 before:h-full max-md:before:hidden">
+        <div class="z-10 relative h-full max-md:min-h-[350px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7600.529599808223!2d83.31703200053772!3d17.73215799348536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394345edcc4fb7%3A0x84e06fa1a732211f!2sa-Hub%2C%20Andhra%20University%20Incubation%20Center!5e0!3m2!1sen!2sin!4v1694247230340!5m2!1sen!2sin"
+            class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+        <div>
+          <h2 class="text-3xl font-extrabold">Get In Touch</h2>
+
+          <!--          <form id="myForm" action="http://localhost:3000/submit-form" method="POST"> -->
+          <form id="myForm" action="https://formspree.io/f/mjvqpyvq" method="POST">
+            <div class="space-y-4 mt-8">
+              <input type="text" placeholder="Full Name" name="fullName" required
+                class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
+              <input type="tel" placeholder="Phone No." name="phone" required pattern="[0-9]{10}"
+                title="Enter a valid 10-digit phone number"
+                class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
+
+              <input type="text" placeholder="Subject" name="subject" required
+                class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
+
+              <textarea placeholder="Write Message" name="message" required
+                class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg"
+                style="height: 200px; width: 100%;"></textarea>
+            </div>
+
+            <button type="submit"
+              class="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-[#ffa500] text-white hover:bg-[#222]"
+              style="background-color: #ffa500; border-radius: 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
+                viewBox="0 0 548.244 548.244">
+                <path fill-rule="evenodd"
+                  d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+                  clip-rule="evenodd" data-original="#000000" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="foo bg-white dark:bg-gray-900" style="background-color: black;">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-0 md:mb-0">
+          <a href="https://knight6767704.github.io/project/" class="flex items-center">
+            <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+              style="width:226px; height:111px; object-fit:cover" width="auto" height="118"
+              srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+              fetchpriority="high">
+          </a>
+          <div>
+            <p class="text-left ml-6" style="color: white;">Your Trusted Fitness Equipment Service Provider across 25+
+              Indian Cities. Installation, Maintenance, Repair Services for Residential and Commercial Clients.
+              Committed to Customer Satisfaction.</p>
+          </div>
+          <div class="ml-6 mt-12">
+            <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
+              <!-- Facebook Icon -->
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- Instagram Icon -->
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- LinkedIn Icon -->
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+
+        
+        <div class="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
+          <div class="text-gray-500 dark:text-white font-medium mr-16">
+            <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Serving in</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Visakhapatnam</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Hyderabad</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Bengaluru</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0" style="text-decoration: underline;">Other Cities</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Quick Links</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4">
+                <a href="privacy.html">
+                <p style="text-decoration: underline;">Privacy Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="refund.html">
+                <p style="text-decoration: underline;">Refund Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="shipping.html">
+                <p style="text-decoration: underline;">Shipping Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="responsibilities.html">
+                <p style="text-decoration: underline;">Terms & Conditions</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Contact Us</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-phone mr-2 mt-1"></i> <!-- Call icon -->
+                <a href="tel:08062177481">
+                <p class="mb-0">08062177481</p> <!-- Phone number -->
+                </a>
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-envelope mr-2 mt-1"></i> <!-- Message icon -->
+                <a href="mailto:contact@fixmymill.com">
+                  <p class="mb-0" style="text-decoration: underline;">contact@fixmymill.com</p>
+                </a>
+
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-map-marker-alt mr-2 mt-1"></i> <!-- Location icon -->
+                <p class="mb-0">A-hub, Andhra University, Maddilapalem, Visakhapatnam, 530003, Andhra Pradesh, India</p>
+                <!-- Address -->
+              </li>
+            </ul>
+
+          </div>
+          <!--
+            <div class="mt-60 lg:mt-0 lg:mr-20">
+              <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div> -->
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between text-white">
+        <p class="text-sm sm:text-center ">© 2023 by Matric Services. All Rights Reserved.
+        </p>
+        
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-1c88ce3c-5630-4da1-a23c-007d73fd35a7"></div>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="navbar.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

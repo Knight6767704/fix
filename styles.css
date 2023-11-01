@@ -1,0 +1,109 @@
+.logo-image {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+}
+/* Add margin-right to the navigation items */
+
+.reason {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.reason{
+  border-left: 1px solid black; /* Vertical line */
+  padding-right: 100px; /* Adjust as needed */
+  margin-right: 30px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .reason {
+    padding-right: 0; /* Reset padding */
+    margin-right: 0; /* Reset margin */
+    color: black;
+  }
+}
+
+
+
+/* Add this CSS code to your stylesheet */
+.card:hover {
+  background-color: #ffa500;
+}
+
+#hi {
+  gap: 4rem; /* Increase the gap between grid items */
+}
+
+
+body {
+  font-family: Rubik;
+}
+
+.hero {
+  font-family: sans-serif;
+}
+.services svg {
+  width: 100%; /* Set the width of SVG to 100% */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  max-width: 515px; /* Set a maximum width for the SVG to avoid becoming too large */
+}
+
+@media (max-width: 768px) {
+  .services svg {
+    max-width: 100%; /* Allow the SVG to take up the full width on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy svg {
+    height: auto;
+    width: 360px;/* Allow the SVG to take up the full width on smaller screens */
+  }
+}
+/* Style only the specific list with the 'dot-bullet-list' class */
+ul.dot-bullet-list {
+list-style-type: disc; /* Use 'disc' for dot bullets */
+}
+
+
+/* Add this CSS to your existing styles */
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Full-screen menu styles */
+.navbar-menu.fullscreen {
+  position: fixed;
+  top: 7.25rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Adjust the background color and opacity as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the menu is above other elements */
+}
+
+/* Apply the fullscreen class when the body has overflow-hidden class */
+body.overflow-hidden .navbar-menu {
+  display: flex;
+}
+/* Add this CSS to your existing styles */
+
+.navbar-close {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+/* Add this CSS to adjust the position in responsive mode */
+@media (max-width: 768px) {
+  .niv a {
+    margin-top: 40px; /* Adjust the margin value to move the links up */
+  }
+}

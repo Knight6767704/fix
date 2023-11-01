@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixmymill|treadmill service</title>
+  <link rel="icon" href="images/Screenshot from 2023-09-06 14-38-59.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+          }
+        }
+      }
+    }
+  </script>
+
+  <nav class="niv fixed px-4 py-2 flex justify-between items-center dark:bg-gray-800"
+    style="background-color:black; height: 110px;">
+    <div class="max-w-screen-xl flex items-center space-x-4">
+      <!-- Add space to the right of the logo by adjusting the space between elements -->
+      <a href="https://knight6767704.github.io/project/" class="flex items-center sm:ml-0 xs:ml-0 xl:ml-12 mt-4">
+        <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+          style="width:257px;height:100px;object-fit:cover" width="auto" height="118"
+          srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+          fetchpriority="high">
+      </a>
+    </div>
+    <div class="lg:hidden">
+      <button class="navbar-burger flex items-center text-violet-600 dark:text-gray-100 p-1" id="navbar_burger">
+        <svg class="block h-8 w-10 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Hamberger menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 mr-80" id="navbar-sticky">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700"
+        style="background-color: black;">
+        <li>
+          <a href="about.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700" style="width: 77px;">About
+            Us</a>
+        </li>
+        <li>
+          <a href="service.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="faq.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700" style="width: 92px;">Contact
+            Us</a>
+        </li>
+       
+      </ul>
+    </div>
+
+
+    <div class="hidden lg:flex">
+
+
+      <button id="theme-toggle" data-collapse-toggle="navbar-sticky" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <span id="menuIcon">
+          <svg id="theme-toggle-light-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </span>
+      </button>
+
+
+    </div>
+
+  </nav>
+
+
+  <!-- mobile navbar -->
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
+    <nav
+      class="fixed dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-full max-w-full py-6 px-6 border-r overflow-y-auto"
+      style="background-color: black;">
+      <div class="flex items-center justify-between mb-8">
+        <div></div> <!-- This empty div is a placeholder for the logo, adjust its width as needed -->
+        <button class="navbar-close">
+          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+
+      <div class="niv flex flex-col items-center mt-28">
+        <a href="about.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us</a>
+        <a href="service.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Services</a>
+        <a href="contact.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Contact Us</a>
+        <a href="faq.html" class="text-white hover:text-gray-300 py-2 mb-6 text-xl">FAQ</a>
+      </div>
+
+    </nav>
+  </div>
+  <style>
+    /* Add these styles to make the navbar sticky */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Adjust the z-index value based on your design needs */
+    }
+
+    /* Rest of your styles */
+  </style>
+
+
+
+  <script>
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+
+    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    var themeToggleDarkIcon_2 = document.getElementById('theme-toggle-dark-icon-2');
+    var themeToggleLightIcon_2 = document.getElementById('theme-toggle-light-icon-2');
+
+    // Change the icons inside the button based on previous settings
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+      '(prefers-color-scheme: dark)').matches)) {
+      themeToggleLightIcon.classList.remove('hidden');
+      if (themeToggleDarkIcon_2) {
+        themeToggleLightIcon_2.classList.remove('hidden');
+      }
+    } else {
+      themeToggleDarkIcon.classList.remove('hidden');
+      if (themeToggleDarkIcon_2) {
+        themeToggleDarkIcon_2.classList.remove('hidden');
+      }
+    }
+
+
+    var themeToggleBtn_2 = document.getElementById('theme-toggle-2');
+    if (themeToggleBtn_2) {
+
+      themeToggleBtn_2.addEventListener('click', function () {
+
+        // toggle icons inside button
+        themeToggleDarkIcon_2.classList.toggle('hidden');
+        themeToggleLightIcon_2.classList.toggle('hidden');
+
+        sync_theme()
+
+      });
+    }
+
+
+    var themeToggleBtn = document.getElementById('theme-toggle');
+
+    themeToggleBtn.addEventListener('click', function () {
+
+      // toggle icons inside button
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
+
+      sync_theme()
+
+
+    });
+
+
+    function sync_theme() {
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      }
+
+    }
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // open
+      const burger = document.querySelectorAll('.navbar-burger');
+      const menu = document.querySelectorAll('.navbar-menu');
+
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll('.navbar-close');
+      const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
+        }
+      }
+
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
+        }
+      }
+    });
+  </script>
+
+  
+<!--<style>
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 370px;
+      margin: 0 auto;
+      background-image: url("privacy.jpg"); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      color: #ffff;
+      text-align: center;
+      padding: 100px 20px;
+      border-radius: 15px;
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the dullness */
+    z-index: 0;
+    border-radius: 19px;
+    }
+  
+    .text {
+      position: relative;
+      z-index: 1;
+    }
+    
+  </style>
+  
+  <section class="new" style="background-color: white;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="overlay">
+        <div class="text">
+            <div class="text" style="padding: 120px 130px;">
+                <h1 style="font-size: 35px;">We care about your privacy </h1>
+                <br>
+                 <p style="font-size: 15px;">your privacy is important to us at Fixmymill.
+                    We respect your privacy regarding any informationwe we may collect from you across websit. </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="para" style="font-size: 15px;padding: 40px 130px;">
+      <p>Welcome to FixMyMill's Privacy Policy.
+       At FixMyMill, we take your privacy seriously. This policy outlines how we collect, use,
+       protect, and disclose your personal information when you visit our website and use our
+       services related to thread mill installation, thread mill services, exercise bike repairs, 
+       and elliptical cross repair.
+      </p>
+     <br>
+     <h1 style="font-size: 20px;"><b> What information do we collect?
+    </b></h1>
+    <p>When you interact with FixMyMill, we may collect certain personal information from you, such as your name, email address, phone number, and payment details. This information allows us to provide you with our services effectively.
+    </p>
+    <br>
+     <h1 style="font-size: 20px;"><b>Purpose of Data Collection:
+    </b></h1>
+    <p>We collect your data for specific purposes, including scheduling service appointments, processing payments, and communicating with you regarding your repair or installation services.
+
+    </p>
+    <br>
+     <h1 style="font-size: 20px;"><b>Data Protection:
+    </b></h1>
+    <p>Your data is used solely for the purpose of providing the services 
+        you requested. We may send you updates or notifications related to your service 
+        appointments or account. Rest assured, your data's security is our top priority. We implement
+         robust security measures, including encryption and secure payment processing, to protect your information.
+
+    </p>
+    <br>
+     <h1 style="font-size: 20px;">
+        <b>Third-Party Services:</b></h1>
+        <p>We may use trusted third-party services or tools, such as Google Analytics, to better understand user behavior. These services have their own privacy policies, which we encourage you to review.
+
+        </p>
+        <br>
+     <h1 style="font-size: 20px;"><b>Additional Information</b></h1>
+     <p>In addition to our privacy policy, we may provide additional information about service warranties or guarantees specific to the services we
+
+        offer. We hope this privacy policy provides you with a clear understanding of how we handle your data at FixMyMill. Your privacy is important to us, and we are here to answer any questions or concerns you may have. Thank you for choosing FixMyMill for your fitness equipment repair and
+    installation needs.</p>
+     <br>
+  
+          </div>
+ </section> -->
+            <section class="privacy">
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex flex-col items-center">
+                <svg width="1207" height="405" viewBox="0 0 1207 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 15C0 6.71572 6.71573 0 15 0H1192C1200.28 0 1207 6.71573 1207 15V390C1207 398.284 1200.28 405 1192 405H15C6.71573 405 0 398.284 0 390V15Z" fill="black" fill-opacity="0.68"/>
+                  <image href="images/privacy.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" opacity="0.4"/>
+                  <text x="50%" y="50%" fill="white" font-size="41" text-anchor="middle">We care about your privacy</text>
+                  <text x="50%" y="70%" fill="white" font-size="18" text-anchor="middle">
+                    Your privacy is important to us at FixMyMill. We respect your privacy regarding any information
+                  </text>
+                  <text x="50%" y="80%" fill="white" font-size="18" text-anchor="middle">we may collect from you across our website.</text>
+                </svg>
+                
+              </div>
+
+            </section>
+          
+            <section class="cd bg-white">
+              <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex flex-col items-center">
+                  <ul>
+                      <li class="mb-4" style="font-size:18px;">
+                          <p>Welcome to FixMyMill's Privacy Policy. At FixMyMill, we take your privacy seriously. This policy outlines how we collect, use, protect, and disclose your personal information when you visit our website and use our services related to thread mill installation, thread mill services, exercise bike repairs, and elliptical cross repair.</p>
+                      </li>
+                      <li class="mb-4" style="font-size:18px;">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">What information do we collect?</h2>
+                          <p>When you interact with FixMyMill, we may collect certain personal information from you, such as your name, email address, phone number, and payment details. This information allows us to provide you with our services effectively.</p>
+                      </li>
+                      <li class="mb-4" style="font-size:18px;">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Purpose of Data Collection:</h2>
+                        <p>We collect your data for specific purposes, including scheduling service appointments, processing payments, and communicating with you regarding your repair or installation services.</p>
+                      </li>
+                      <li class="mb-4" style="font-size:18px;">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Data Protection:</h2>
+                        <p>Your data is used solely for the purpose of providing the services you requested. We may send you updates or notifications related to your service appointments or account.
+                          Rest assured, your data's security is our top priority. We implement robust security measures, including encryption and secure payment processing, to protect your information.
+                          </p>
+                      </li>
+                      <li class="mb-4" style="font-size:18px;">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Third-Party Services:</h2>
+                        <p>We may use trusted third-party services or tools, such as Google Analytics, to better understand user behavior. These services have their own privacy policies, which we encourage you to review.</p>
+                      </li>
+                      <li class="mb-4" style="font-size:18px;">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Additional Information:</h2>
+                        <p>In addition to our privacy policy, we may provide additional information about service warranties or guarantees specific to the services we offer.
+                          We hope this privacy policy provides you with a clear understanding of how we handle your data at FixMyMill. Your privacy is important to us, and we are here to answer any questions or concerns you may have. Thank you for choosing FixMyMill for your fitness equipment repair and installation needs.</p>
+                      </li>
+
+
+
+
+                  </ul>
+              </div>
+          </section>
+                    
+            
+            
+
+  <footer class="foo bg-white dark:bg-gray-900" style="background-color: black;">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-0 md:mb-0">
+          <a href="https://knight6767704.github.io/project/" class="flex items-center">
+            <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+              style="width:226px; height:111px; object-fit:cover" width="auto" height="118"
+              srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+              fetchpriority="high">
+          </a>
+          <div>
+            <p class="text-left ml-6" style="color: white;">Your Trusted Fitness Equipment Service Provider across 25+
+              Indian Cities. Installation, Maintenance, Repair Services for Residential and Commercial Clients.
+              Committed to Customer Satisfaction.</p>
+          </div>
+          <div class="ml-6 mt-12">
+            <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
+              <!-- Facebook Icon -->
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- Instagram Icon -->
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- LinkedIn Icon -->
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+
+        @nbsp;
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
+          <div class="text-gray-500 dark:text-white font-medium mr-16">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Serving in</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Visakhapatnam</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Hyderabad</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Bengaluru</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0" style="text-decoration: underline;">Other Cities</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4">
+                <a href="privacy.html">
+                <p style="text-decoration: underline;">Privacy Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="refund.html">
+                <p style="text-decoration: underline;">Refund Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="shipping.html">
+                <p style="text-decoration: underline;">Shipping Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="responsibilities.html">
+                <p style="text-decoration: underline;">Terms & Conditions</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-phone mr-2 mt-1"></i> <!-- Call icon -->
+                <a href="tel:08062177481">
+                <p class="mb-0">08062177481</p> <!-- Phone number -->
+                </a>
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-envelope mr-2 mt-1"></i> <!-- Message icon -->
+                <a href="mailto:contact@fixmymill.com">
+                  <p class="mb-0" style="text-decoration: underline;">contact@fixmymill.com</p>
+                </a>
+
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-map-marker-alt mr-2 mt-1"></i> <!-- Location icon -->
+                <p class="mb-0">A-hub, Andhra University, Maddilapalem, Visakhapatnam, 530003, Andhra Pradesh, India</p>
+                <!-- Address -->
+              </li>
+            </ul>
+
+          </div>
+          <!--
+            <div class="mt-60 lg:mt-0 lg:mr-20">
+              <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div> -->
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between text-white">
+        <p class="text-sm sm:text-center ">© 2023 by Matric Services. All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-1c88ce3c-5630-4da1-a23c-007d73fd35a7"></div>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="navbar.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

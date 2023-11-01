@@ -1,0 +1,695 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixmymill|treadmill service</title>
+    <link rel="icon" href="images/Screenshot from 2023-09-06 14-38-59.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <script>
+        tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                        }
+                    }
+                }
+            }
+    </script>
+    
+    <nav class="fixed px-4 py-2 flex justify-between items-center bg-white dark:bg-gray-800" style="background-color:black; height: 120px;">
+        <div class="max-w-screen-xl flex items-center space-x-4">
+            <!-- Add space to the right of the logo by adjusting the space between elements -->
+            <a href="https://knight6767704.github.io/project/" class="flex items-center ml-4 lg:ml-16 xl:ml-64 mt-4">
+                <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png" style="width:257px;height:100px;object-fit:cover" width="auto" height="118" srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x" fetchpriority="high">
+            </a>
+        </div>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-violet-600 dark:text-gray-100 p-1" id="navbar_burger">
+                    <svg class="block h-8 w-10 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Hamberger menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+            </button>
+        </div>
+    
+        <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 mr-80" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700" style="background-color: black;">
+            <li>
+              <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">About Us</a>
+            </li>
+            <li>
+              <a href="service.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+              <a href="faq.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
+            </li>
+            <li>
+              <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+    
+    
+        <div class="hidden lg:flex">
+    
+           
+            <button id="theme-toggle" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <span id="menuIcon">
+                  <svg id="theme-toggle-light-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+                </span>
+              </button>
+    
+           
+        </div>
+    
+    </nav>
+    
+    
+    <!-- mobile navbar -->
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
+        <nav class="fixed bg-black dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-full max-w-full py-6 px-6 border-r overflow-y-auto" style="background-color: black;">
+    
+           
+            <div class="flex items-center justify-between mb-8">
+                <div></div> <!-- This empty div is a placeholder for the logo, adjust its width as needed -->
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+           
+    
+            <div class="flex flex-col items-center mt-28">
+                <a href="about.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us</a>
+                <a href="service.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Services</a>
+                <a href="contact.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Contact Us</a>
+                <a href="faq.html" class="text-white hover:text-gray-300 py-2 mb-6 text-xl">FAQ</a>
+            </div>
+    
+        </nav>
+    </div>
+    <style>
+        /* Add these styles to make the navbar sticky */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Adjust the z-index value based on your design needs */
+        }
+       
+        /* Rest of your styles */
+    </style>
+    
+    
+    
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+    
+    
+            var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    
+            var themeToggleDarkIcon_2 = document.getElementById('theme-toggle-dark-icon-2');
+            var themeToggleLightIcon_2 = document.getElementById('theme-toggle-light-icon-2');
+    
+            // Change the icons inside the button based on previous settings
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+                '(prefers-color-scheme: dark)').matches)) {
+                themeToggleLightIcon.classList.remove('hidden');
+                if (themeToggleDarkIcon_2) {
+                    themeToggleLightIcon_2.classList.remove('hidden');
+                }
+            } else {
+                themeToggleDarkIcon.classList.remove('hidden');
+                if (themeToggleDarkIcon_2) {
+                    themeToggleDarkIcon_2.classList.remove('hidden');
+                }
+            }
+    
+    
+            var themeToggleBtn_2 = document.getElementById('theme-toggle-2');
+            if (themeToggleBtn_2) {
+    
+                themeToggleBtn_2.addEventListener('click', function () {
+    
+                    // toggle icons inside button
+                    themeToggleDarkIcon_2.classList.toggle('hidden');
+                    themeToggleLightIcon_2.classList.toggle('hidden');
+    
+                    sync_theme()
+    
+                });
+            }
+    
+    
+            var themeToggleBtn = document.getElementById('theme-toggle');
+    
+            themeToggleBtn.addEventListener('click', function () {
+    
+                // toggle icons inside button
+                themeToggleDarkIcon.classList.toggle('hidden');
+                themeToggleLightIcon.classList.toggle('hidden');
+    
+                sync_theme()
+    
+    
+            });
+    
+    
+            function sync_theme() {
+                // if set via local storage previously
+                if (localStorage.getItem('color-theme')) {
+                    if (localStorage.getItem('color-theme') === 'light') {
+                        document.documentElement.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+                    }
+                    // if NOT set via local storage previously
+                } else {
+                    if (document.documentElement.classList.contains('dark')) {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+                    } else {
+                        document.documentElement.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+                    }
+                }
+    
+            }
+    
+    
+    
+            document.addEventListener('DOMContentLoaded', function () {
+                // open
+                const burger = document.querySelectorAll('.navbar-burger');
+                const menu = document.querySelectorAll('.navbar-menu');
+    
+                if (burger.length && menu.length) {
+                    for (var i = 0; i < burger.length; i++) {
+                        burger[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+    
+                // close
+                const close = document.querySelectorAll('.navbar-close');
+                const backdrop = document.querySelectorAll('.navbar-backdrop');
+    
+                if (close.length) {
+                    for (var i = 0; i < close.length; i++) {
+                        close[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            
+    
+                if (backdrop.length) {
+                    for (var i = 0; i < backdrop.length; i++) {
+                        backdrop[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            });
+    </script>
+  <br>
+  <br>
+  <div>
+      <style>
+          .faq {
+              max-width: 600px;
+              margin: 0 auto;
+          }
+  
+          .faq h2 {
+              font-size: 24px;
+              margin-bottom: 10px;
+          }
+  
+          .faq input[type="text"] {
+              width: 100%;
+              padding: 8px;
+              margin-bottom: 10px;
+          }
+  
+          .faq .question {
+              margin-bottom: 10px;
+          }
+  
+          .answer {
+              display: none;
+          }
+  
+          hr {
+              border-color: #ffa500;
+          }
+          .venkat{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          .venkat1{
+            width:100%;
+          }
+      </style>
+      <section class="py-10 lg:py-20 bg-stone-100 font-poppins dark:bg-gray-800" style="background-color: black;">
+          <div class="max-w-6xl py-4 mx-auto lg:py-6 md:px-4 venkat">
+              <div class="flex flex-wrap ">
+                  <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+                      <div class="lg:max-w-md" style="padding-left: 70px;">
+                          <div class="px-4 pl-4 mb-6">
+                              <h1 class="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300"
+                                  style="color:white">
+                                  <br>
+                                  FAQ
+                              </h1>
+                          </div>
+                          <h3 class="px-4 mb-10 text-xl leading-7 text-gray-500 dark:text-gray-400"
+                              style="color: #ffa500;">
+                              The Ins And Outs of <br> We Do Business
+                          </h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="w-full px-4 mb-10 lg:w-1/2 venkat1 lg:mb-0">
+                  <div class="faq">
+                      <!-- <h2 style="color: #ffa500;">Frequently Asked Questions</h2> -->
+                      <br>
+                      <br>
+                      
+                      <button id="toggleSearchButton" class="show-search-btn" style="color: #ffa500;">Search Your Questuion Here</button>
+                      <input type="text" id="search" placeholder="Search for a question" style="display: none;">
+
+
+                      <div class="questions" style="color: white;">
+                        <br>
+                          <div class="question">
+                            
+                              <h3>Q: How often should I service my treadmill?</h3>
+                              
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: Regular maintenance is recommended every 6 to 12 months, depending on the
+                                      frequency of use. Heavy usage might require more frequent servicing.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                              <h3>Q: What does treadmill servicing include?</h3>
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: Treadmill servicing typically includes lubricating the belt, checking and
+                                      adjusting the belt tension, inspecting the motor and electronics, and cleaning
+                                      the machine.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                              <h3>Q: Why is my treadmill belt slipping?</h3>
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: A slipping belt can be caused by improper belt tension, lack of lubrication, or
+                                      a worn-out belt. Check the tension and lubrication first, and if the issue
+                                      persists, you might need a new belt.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                              <h3>Q: My treadmill displays an error code. What should I do?</h3>
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: Error codes indicate specific issues with your treadmill. Refer to the user
+                                      manual for the meaning of the error code. If you can't resolve it, contact our
+                                      customer support for assistance.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                              <h3>Q: How can I prevent my treadmill from making noise?</h3>
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: Regular lubrication of the belt and periodic tightening of nuts and bolts can
+                                      help reduce noise. If the noise persists, there might be a mechanical issue that
+                                      requires professional attention.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                              <h3>Q: Can I perform treadmill maintenance myself?</h3>
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: Basic maintenance like cleaning and lubricating can be done by users. However,
+                                      for in-depth servicing and repairs, it's best to rely on trained professionals to
+                                      ensure safety and proper functioning.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                              <h3>Q: What should I do if my treadmill is not turning on?</h3>
+                              <button class="show-answer-btn">Show Answer</button>
+                              <div class="answer">
+                                  <p>A: Check if the power cord is properly connected and if the power outlet is
+                                      functioning. If the issue persists, it might be an internal electrical problem
+                                      that requires professional diagnosis.</p>
+                              </div>
+                          </div>
+                          <hr>
+                          <div class="question">
+                            <h3>Q: How long does a treadmill last with proper maintenance?</h3>
+                            <button class="show-answer-btn">Show Answer</button>
+                            <div class="answer">
+                                <p>A: A well-maintained treadmill can last anywhere from 7 to 12 years or more. Regular servicing and proper care can significantly extend its lifespan. 
+
+                                    </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="question">
+                            <h3>Q: Do you provide on-site servicing?</h3>
+                            <button class="show-answer-btn">Show Answer</button>
+                            <div class="answer">
+                                <p>A: Yes, we offer on-site servicing for treadmills. Contact our customer support to schedule a service appointment at your convenience. 
+
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="question">
+                            <h3>Q: How do I schedule a treadmill service?</h3>
+                            <button class="show-answer-btn">Show Answer</button>
+                            <div class="answer">
+                                <p>A: You can schedule a treadmill service by contacting our customer support via phone or email. We'll be happy to assist you in setting up an appointment. </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="question">
+                            <h3>Q: Is treadmill servicing covered under warranty?</h3>
+                            <button class="show-answer-btn">Show Answer</button>
+                            <div class="answer">
+                                <p>A: Treadmill servicing is not typically covered under the manufacturer's
+                                     warranty unless explicitly stated. It's important to check the warranty
+                                      terms for details.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="question">
+                            <h3>Q: <div class="question">
+                                <h3>Q: Is treadmill servicing covered under warranty?</h3>
+                                <button class="show-answer-btn">Show Answer</button>
+                                <div class="answer">
+                                    <p>A: If your treadmill is still under warranty and experiencing issues, contact our customer support or the manufacturer's support line to inquire about warranty-covered repairs.
+
+
+                                    </p>
+                                </div>
+                            </div>
+                            <hr></h3>
+                            <button class="show-answer-btn">Show Answer</button>
+                            <div class="answer">
+                                <p>A: Treadmill servicing is not typically covered under the manufacturer's
+                                     warranty unless explicitly stated. It's important to check the warranty
+                                      terms for details.</p>
+                            </div>
+                        </div>
+                        <hr>
+
+                          <!-- Add more questions here -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script>
+        function toggleSearchInput() {
+        const searchInput = document.getElementById('search');
+        if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+            searchInput.style.display = 'block';
+        } else {
+            searchInput.style.display = 'none';
+        }
+    }
+
+    // Add a click event listener to the search button
+    const toggleSearchButton = document.getElementById('toggleSearchButton');
+    toggleSearchButton.addEventListener('click', toggleSearchInput);
+
+
+
+
+          const showAnswerButtons = document.querySelectorAll('.show-answer-btn');
+  
+          showAnswerButtons.forEach(button => {
+              button.addEventListener('click', function () {
+                  const answer = this.nextElementSibling;
+                  if (answer.style.display === 'none' || answer.style.display === '') {
+                      answer.style.display = 'block';
+                  } else {
+                      answer.style.display = 'none';
+                  }
+              });
+          });
+  
+          document.getElementById('search').addEventListener('input', function () {
+              let searchTerm = this.value.toLowerCase();
+              let questions = document.querySelectorAll('.question');
+  
+              questions.forEach(function (question) {
+                  let questionText = question.textContent.toLowerCase();
+                  if (questionText.includes(searchTerm)) {
+                      question.style.display = 'block';
+                  } else {
+                      question.style.display = 'none';
+                  }
+              });
+          });
+      </script>
+      </div>
+
+  
+
+  <div>
+    <section class="py-10 lg:py-20 bg-stone-100 font-poppins dark:bg-gray-800" style="background-color: white; padding-top: 0px;">
+        <div class="max-w-6xl py-4 mx-auto lg:py-6 md:px-4">
+            <div class="flex flex-wrap ">
+                <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+                    <div class="lg:max-w-md">
+                        <div class="px-4 pl-4 mb-6">
+                            <h1 class="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300"
+                                style="color:rgb(0, 0, 0);font-size: 40px; padding-left: 50px;">
+                                <br>
+                               <b> BILLING & <br>PRICING</b>
+                            </h1>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h3 class="px-4 mb-10 text-xl leading-7 text-gray-500 dark:text-gray-400"
+                            style="color: #ffa500;padding-left: 70px;">
+                            Find The Best Package<br>For Your Budget
+                        </h3>
+                    </div>
+                </div>
+                <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium" style="color: rgb(0, 0, 0);">
+                        <li class="mb-4"
+                            style="font-size:16px; line-height:1.74em; font-family:barlow-medium,barlow,sans-serif;">
+                            <p style="color: #ffa500;font-size: 25px;padding-top: 50px;">Payments Accepted</p>
+                        </li>
+                        <li>
+                            <p style="font-size: 16px;">We accept all types of payments including all major credit cards, debit cards, net banking, UPI payments, e-wallets, and bank transfers. We accept payments from all major Indian Banks including SBI, ICICI, HDFC, Axis Bank, Kotak Mahindra Bank, and Indian Bank.
+                               We also accept payments from popular Indian e-wallet companies like Paytm, PhonePe, Google Pay, and Amazon Pay.</p>
+                        </li>
+                        <li class="mb-4"
+                            style="font-size:16px; line-height:1.74em; font-family:barlow-medium,barlow,sans-serif;">
+                            <p style="color: #ffa500;font-size: 25px;padding-top: 50px;">Cancellation Policy</p>
+                        </li>
+                        <li>
+                          <p style="font-size: 16px;">Our Cancellation Policy allows you to cancel your booking up to one day before the appointment. If you need to reschedule, we will do our best to find a time that works for you. However, if the technician is already on their way to your location, the appointment cannot be cancelled. In this case, 
+                            you will be charged the full amount for the service. We thank you for your understanding.</p>
+                      </li>
+                      <li class="mb-4"
+                      style="font-size:16px; line-height:1.74em; font-family:barlow-medium,barlow,sans-serif;">
+                      <p style="color: #ffa500;font-size: 25px;padding-top: 50px;">satisfaction Guarantee</p>
+                  </li>
+                  <li>
+                    <p style="font-size: 16px;">At Fixmymill, we are committed to providing quality service and satisfaction. We guarantee that all of our services will be performed with the highest level of craftsmanship and attention to detail. If you are not completely satisfied with the service provided, 
+                      please get in touch with us and we will work to resolve the issue. We stand behind our work and promise to make it right.</p>
+                </li>
+                  
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+   
+</div>
+
+
+
+<footer class="bg-white dark:bg-gray-900" style="background-color: black;">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-0 md:mb-0">
+          <a href="https://knight6767704.github.io/project/" class="flex items-center">
+            <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+              style="width:226px; height:111px; object-fit:cover" width="auto" height="118"
+              srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+              fetchpriority="high">
+          </a>
+          <div>
+            <p class="text-left ml-6" style="color: white;">Your Trusted Fitness Equipment Service Provider across 25+
+              Indian Cities. Installation, Maintenance, Repair Services for Residential and Commercial Clients.
+              Committed to Customer Satisfaction.</p>
+          </div>
+          <div class="ml-6 mt-12">
+            <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
+              <!-- Facebook Icon -->
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- Instagram Icon -->
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- LinkedIn Icon -->
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+
+        @nbsp;
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
+          <div class="text-gray-500 dark:text-white font-medium mr-16">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Serving in</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Visakhapatnam</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Hyderabad</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Bengaluru</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0" style="text-decoration: underline;">Other Cities</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4">
+                <a href="privacy.html">
+                <p style="text-decoration: underline;">Privacy Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="refund.html">
+                <p style="text-decoration: underline;">Refund Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="shipping.html">
+                <p style="text-decoration: underline;">Shipping Policy</p></a>
+              </li>
+              <li class="mb-4">
+                <a href="responsibilities.html">
+                <p style="text-decoration: underline;">Terms & Conditions</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-phone mr-2 mt-1"></i> <!-- Call icon -->
+                <a href="tel:08062177481">
+                  <p class="mb-0">08062177481</p> <!-- Phone number -->
+                  </a>
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-envelope mr-2 mt-1"></i> <!-- Message icon -->
+                <a href="mailto:contact@fixmymill.com">
+                  <p class="mb-0" style="text-decoration: underline;">contact@fixmymill.com</p>
+                </a>
+
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-map-marker-alt mr-2 mt-1"></i> <!-- Location icon -->
+                <p class="mb-0">A-hub, Andhra University, Maddilapalem, Visakhapatnam, 530003, Andhra Pradesh, India</p>
+                <!-- Address -->
+              </li>
+            </ul>
+
+          </div>
+          <!--
+            <div class="mt-60 lg:mt-0 lg:mr-20">
+              <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div> -->
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between text-white">
+        <p class="text-sm sm:text-center ">© 2023 by Matric Services. All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-1c88ce3c-5630-4da1-a23c-007d73fd35a7"></div>
+  
+
+<script src="tailwind.config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>
+
