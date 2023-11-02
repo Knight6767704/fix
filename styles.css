@@ -107,3 +107,20 @@ body.overflow-hidden .navbar-menu {
     margin-top: 40px; /* Adjust the margin value to move the links up */
   }
 }
+button {
+  outline: none;
+}
+
+/* Adjust logo size for smaller screens */
+@media (max-width: 768px) {
+  .nav-logo img {
+      width: 100%; /* Make the logo take 100% of the container width */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+/* Adjust navigation items for smaller screens */
+@media (max-width: 768px) {
+  .nav-menu ul li {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
