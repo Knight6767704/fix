@@ -15,7 +15,7 @@ const path = require('path'); // Node.js module for working with file paths
 
 const app = express();
 
-app.use(cors());
+
 app.use(cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: true }));
